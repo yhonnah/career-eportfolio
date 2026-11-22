@@ -534,6 +534,10 @@ code {
   transform: translateY(-50%) scale(1.06);
 }
 
+.carousel-btn[hidden] {
+  display: none;
+}
+
 .carousel-prev {
   left: -58px;
 }

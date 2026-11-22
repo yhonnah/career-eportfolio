@@ -63,12 +63,24 @@
     });
   });
 
-  // Horizontal carousel arrow helper
+  // Horizontal carousel arrow helper with auto-hide at bounds
+  const carouselUpdaters = [];
   const initCarousel = (trackId, prevId, nextId, cardSelector) => {
     const track = document.getElementById(trackId);
     const prev = document.getElementById(prevId);
     const next = document.getElementById(nextId);
     if (!track || !prev || !next) return;
+
+    const updateArrows = () => {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (maxScroll <= 2) {
+        prev.hidden = true;
+        next.hidden = true;
+        return;
+      }
+      prev.hidden = track.scrollLeft <= 2;
+      next.hidden = track.scrollLeft >= maxScroll - 2;
+    };
 
     const getStep = () => {
       const card = track.querySelector(cardSelector);
@@ -82,8 +94,21 @@
     next.addEventListener("click", () => {
       track.scrollBy({ left: getStep(), behavior: "smooth" });
     });
+
+    track.addEventListener("scroll", updateArrows, { passive: true });
+    window.addEventListener("resize", updateArrows);
+    carouselUpdaters.push(updateArrows);
+    updateArrows();
   };
 
   initCarousel("projectsGrid", "projectsPrev", "projectsNext", ".project-card:not(.hidden)");
   initCarousel("expTimeline", "expPrev", "expNext", ".exp-card");
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const projectsGrid = document.getElementById("projectsGrid");
+      if (projectsGrid) projectsGrid.scrollLeft = 0;
+      requestAnimationFrame(() => carouselUpdaters.forEach((fn) => fn()));
+    });
+  });
 })();
