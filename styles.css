@@ -283,6 +283,16 @@ code {
   box-shadow: var(--shadow);
 }
 
+.hero-headshot {
+  width: 100%;
+  aspect-ratio: 4 / 4.2;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 12px;
+  display: block;
+  background: #ffffff;
+}
+
 .photo-placeholder {
   aspect-ratio: 4 / 4.2;
   border-radius: 12px;
