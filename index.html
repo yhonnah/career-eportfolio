@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yohann Elijah C. Rigo — Career e-Portfolio</title>
+  <meta name="description" content="Career e-Portfolio of Yohann Elijah C. Rigo — BS Computer Engineering student at De La Salle University - Manila specializing in Full-Stack Development, IT Solutions, Hardware, and AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="#top" class="brand">
+        <span class="brand-mark">YR</span>
+        <span class="brand-name">Yohann Rigo</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#academic">Academic Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle light/dark mode">
+            <span class="theme-icon" id="themeIcon">◐</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Self-Introduction -->
+    <section class="hero section" id="about">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">BS Computer Engineering (Class of 2027) • DLSU - Manila</div>
+          <h1>Yohann Elijah C. Rigo</h1>
+          <p class="tagline">Computer Engineer • Full-Stack Development • IT Solutions • AI</p>
+          <p class="lead">
+            Fourth-year BS Computer Engineering student at De La Salle University - Manila with a strong foundation in both software and hardware. I build full-stack web applications, microcontroller and electronics systems, and AI-assisted tools—paired with hands-on leadership across university engineering and esports organizations.
+          </p>
+          <div class="hero-actions">
+            <a href="https://www.linkedin.com/in/yohann-elijah-rigo-17b12131a/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              View LinkedIn Profile ↗
+            </a>
+            <a href="#academic" class="btn btn-secondary">Explore Academic Work</a>
+            <a href="#resume" class="btn btn-ghost">View Resume</a>
+          </div>
+          <div class="contact-strip">
+            <span>Quezon City, Metro Manila</span>
+            <span>•</span>
+            <a href="mailto:rigoyohann@gmail.com">rigoyohann@gmail.com</a>
+            <span>•</span>
+            <a href="tel:+639278605075">+63 927 860 5075</a>
+          </div>
+        </div>
+
+        <div class="hero-photo-card">
+          <!-- Replace this placeholder with your professional headshot image: <img src="assets/headshot.jpg" alt="Yohann Elijah C. Rigo" /> -->
+          <div class="photo-placeholder">
+            <div class="photo-initials">YR</div>
+            <p class="photo-note">Add your professional headshot here<br /><code>assets/headshot.jpg</code></p>
+          </div>
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            Open to Software, Full-Stack &amp; IT Solutions Roles
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Pillars -->
+      <div class="container pillars-grid">
+        <article class="pillar-card">
+          <h3>Full-Stack &amp; Software</h3>
+          <p>Proficient in Python, C/C++, Java, PHP, SQL, HTML/CSS, JavaScript, and MATLAB—building role-guarded, cloud-connected web applications from database schema to deployment.</p>
+        </article>
+        <article class="pillar-card">
+          <h3>Hardware &amp; Engineering</h3>
+          <p>Hands-on experience with microcontrollers, Arduino, PCB design (Eagle), and CAD tools (AutoCAD, OnShape), bridging physical systems with software logic.</p>
+        </article>
+        <article class="pillar-card">
+          <h3>Leadership &amp; Operations</h3>
+          <p>Proven track record leading linkages, externals, promotions, and logistics across DLSU Engineering College Government, ACCESS, 78th ENG, and Viridis Arcus Esports.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="section section-alt" id="resume">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Qualifications &amp; Credentials</span>
+            <h2>Resume</h2>
+          </div>
+          <div class="resume-actions">
+            <a href="rigo_cv_resume.pdf" download="Yohann_Elijah_Rigo_Resume.pdf" class="btn btn-primary" id="resumeDownloadBtn">
+              Download Resume (PDF)
+            </a>
+          </div>
+        </div>
+
+        <div class="resume-grid">
+          <div class="resume-card">
+            <h3>Education</h3>
+            <div class="timeline-item">
+              <div class="timeline-meta">2023 – 2027 (Expected)</div>
+              <h4>Bachelor of Science in Computer Engineering</h4>
+              <p class="org">De La Salle University - Manila</p>
+              <p class="muted">Coursework and hands-on training in Python, C, Java, HTML, PHP, MATLAB, microcontrollers, Arduino, and PCBs.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-meta">2021 – 2023</div>
+              <h4>STEM Strand Graduate</h4>
+              <p class="org">Claret School of Quezon City</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <h3>Certifications &amp; Languages</h3>
+            <ul class="clean-list">
+              <li><strong>Certification:</strong> Matsuo-Iwasawa Lab UTokyo GCI World 2026 September Certificate</li>
+              <li><strong>Languages:</strong> English, Filipino</li>
+            </ul>
+          </div>
+
+          <div class="resume-card">
+            <h3>Skills Matrix</h3>
+            <div class="skill-group">
+              <h4>Technical &amp; Programming</h4>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">C / C++</span>
+                <span class="chip">Java</span>
+                <span class="chip">PHP</span>
+                <span class="chip">SQL / MySQL</span>
+                <span class="chip">HTML / CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">MATLAB</span>
+                <span class="chip">Arduino</span>
+                <span class="chip">Tailwind CSS</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h4>Design &amp; Engineering Tools</h4>
+              <div class="chips">
+                <span class="chip">AutoCAD</span>
+                <span class="chip">Figma</span>
+                <span class="chip">Eagle (PCB)</span>
+                <span class="chip">OnShape</span>
+                <span class="chip">Canva</span>
+                <span class="chip">Publication Design</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h4>Professional &amp; Leadership</h4>
+              <div class="chips">
+                <span class="chip">Project Management</span>
+                <span class="chip">External Relations</span>
+                <span class="chip">Leadership</span>
+                <span class="chip">Communication</span>
+                <span class="chip">Critical Thinking</span>
+                <span class="chip">Adaptability</span>
+                <span class="chip">Teamwork</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Work Samples -->
+    <section class="section" id="academic">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Coursework, Thesis &amp; Capstone</span>
+            <h2>Academic Work Samples</h2>
+          </div>
+          <div class="filter-tabs" role="tablist" aria-label="Filter academic samples">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="software">Software &amp; AI</button>
+            <button class="filter-btn" data-filter="hardware">AR &amp; Hardware</button>
+          </div>
+        </div>
+
+        <div class="projects-carousel">
+          <button class="carousel-btn carousel-prev" id="projectsPrev" aria-label="Scroll projects left" title="Previous projects">&#8249;</button>
+          <div class="projects-grid" id="projectsGrid">
+          <article class="project-card" data-category="hardware">
+            <div class="project-media">
+              <div class="media-placeholder">
+                <span>AR Navigation Preview</span>
+                <small>Add thesis screenshots or demo photo</small>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">Degree Thesis</span>
+                <span class="tag">Augmented Reality</span>
+                <span class="tag">Accessibility</span>
+              </div>
+              <h3>Augmented Reality (AR) Campus Navigation Guide — DLSU Manila</h3>
+              <p>
+                Designed and developed an AR navigation system for the St. Joseph, Miguel, and Gokongwei buildings at De La Salle University - Manila. The system calculates and selects the fastest route to a target office or room, and includes an accessibility-focused routing option for mobility-impaired users to avoid physically taxing paths.
+              </p>
+              <div class="project-meta">
+                <span><strong>Focus:</strong> ESP32 BLE Beacons, Wi-Fi Fingerprinting, Inclusive Routing</span>
+                <span><strong>Team:</strong> Collaborative (Angsanto, Calma, Rigo, Toledo)</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="software">
+            <div class="project-media project-media-img">
+              <img src="assets/asterisko-screenshot.png" alt="Asterisko Artisan Coffee Inventory Management System login screen" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">Capstone Project</span>
+                <span class="tag">Full-Stack</span>
+                <span class="tag">PHP • MySQL • Tailwind</span>
+              </div>
+              <h3>Offline-First Web Inventory Management System — Asterisko Artisan Coffee</h3>
+              <p>
+                Developed an offline-first, role-guarded web inventory management platform using PHP, MySQL, Tailwind CSS, and the Google Antigravity agentic software development platform, deployed via Aiven (cloud database) and Render. Supports real-time stock deductions, physical shift variance, client-side OCR delivery intake, waste logging, purchase order generation, and financial reporting.
+              </p>
+              <div class="project-meta">
+                <span><strong>Stack:</strong> PHP, MySQL, Tailwind CSS, Aiven, Render</span>
+                <span><strong>Team:</strong> Collaborative (Calma, Rigo, Toledo)</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="software">
+            <a href="https://colab.research.google.com/drive/1py-OdP1g1r0ZbUcYqXlzZsgDCe9KtLC0" target="_blank" rel="noopener noreferrer" class="project-media project-media-ml">
+              <div class="media-placeholder">
+                <span>LeakCNN2D • Acoustic Leak Detection ↗</span>
+                <small>90.99% Accuracy • 90.33% Macro-F1 • 100% Leak Recall</small>
+              </div>
+            </a>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">Collaborative Research</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">PyTorch • Optuna</span>
+              </div>
+              <h3>Acoustic-Based Water Pipeline Leak Detection (Custom 2D CNN)</h3>
+              <p>
+                Collaborative project (Group 9: Angsanto, Lagco, Reantaso, Rigo) developing and evaluating <code>LeakCNN2D</code>, a 1.24M-parameter PyTorch CNN with an on-GPU Log-Mel spectrogram front-end and SpecAugment to classify buried water pipe leaks from Mendeley Noise Logger recordings. Tuned via Optuna (20 trials), achieving 90.99% accuracy, 90.33% test Macro-F1, and 100.00% leak recall (36/36) on held-out segments.
+              </p>
+              <div class="project-meta">
+                <span><strong>Stack:</strong> Python, PyTorch, TorchAudio, Librosa, Optuna</span>
+                <span><strong>Team:</strong> Collaborative (Angsanto, Lagco, Reantaso, Rigo)</span>
+                <a href="https://colab.research.google.com/drive/1py-OdP1g1r0ZbUcYqXlzZsgDCe9KtLC0" target="_blank" rel="noopener noreferrer" style="margin-top: 0.35rem; font-weight: 600;">Open Google Colab Notebook ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="software">
+            <div class="project-media">
+              <div class="media-placeholder">
+                <span>UTokyo GCI World 2026 • Loan Default Prediction</span>
+                <small>LightGBM • Optuna • K-Fold Cross-Validation</small>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">ML Competition</span>
+                <span class="tag">UTokyo Matsuo-Iwasawa Lab</span>
+                <span class="tag">LightGBM • Optuna</span>
+              </div>
+              <h3>Loan Default Risk Prediction — UTokyo GCI World 2026 Competition</h3>
+              <p>
+                Built a tabular machine learning pipeline for the Global Competence in Informatics (GCI) World 2026 competition hosted by the Matsuo-Iwasawa Lab (University of Tokyo). Engineered financial and credit-history features, ran K-Fold cross-validation, and tuned LightGBM hyperparameters with Optuna.
+              </p>
+              <div class="project-meta">
+                <span><strong>Model Stack:</strong> Python, LightGBM, Scikit-Learn (KFold), Optuna, Pandas, NumPy</span>
+                <span><strong>Credential:</strong> UTokyo GCI World 2026 September Certificate</span>
+              </div>
+            </div>
+          </article>
+          </div>
+          <button class="carousel-btn carousel-next" id="projectsNext" aria-label="Scroll projects right" title="Next projects">&#8250;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Activities -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Leadership, Organizations &amp; Events</span>
+            <h2>Experience &amp; Activities</h2>
+          </div>
+        </div>
+
+        <div class="experience-list">
+          <article class="exp-card">
+            <div class="exp-date">2026 – Present</div>
+            <div class="exp-content">
+              <h3>Director for Externals</h3>
+              <p class="org">Viridis Arcus Esports</p>
+              <ul>
+                <li>Source and evaluate potential partnerships and sponsorships for esports teams and collegiate events.</li>
+                <li>Coordinate with external partners and organization members to ensure full compliance with partnership terms.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-date">2025 – Present</div>
+            <div class="exp-content">
+              <h3>Assistant Vice President for Promotions</h3>
+              <p class="org">ACCESS (Association of Computer Engineering Students)</p>
+              <ul>
+                <li>Lead promotional campaigns including teaser publications, main pubs, DP blasts, slide decks, and posters.</li>
+                <li>Collaborate with Project Heads to align visual branding and event aesthetics with each initiative's goals.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-date">2025 – 2026</div>
+            <div class="exp-content">
+              <h3>Director for Linkages</h3>
+              <p class="org">Engineering College Government (DLSU USG)</p>
+              <ul>
+                <li>Managed communication and negotiations with internal and external organizations for partnerships and sponsorships.</li>
+                <li>Coordinated across stakeholders to ensure every partnership deliverable and requirement was fulfilled.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-date">2024 – 2026</div>
+            <div class="exp-content">
+              <h3>Chairperson for Logistics and Technology</h3>
+              <p class="org">78th ENG (78th Engineering Batch Government)</p>
+              <ul>
+                <li>Handled pre-activity documentation, venue reservations, event setup, and technical support.</li>
+                <li>Led logistics and operations for <strong>BridgENG Connections</strong> (inter-college engineering seminar), managing Special Permits for Campus Access for external participants, room bookings, and inter-committee coordination.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-date">2024</div>
+            <div class="exp-content">
+              <h3>Team Leader for Logistics</h3>
+              <p class="org">ENGWEEK 2024</p>
+              <ul>
+                <li>Reserved event venues, processed permits and operational documents, and managed event manpower.</li>
+                <li>Coordinated with fellow team leaders and assistant team leaders to keep week-long activities running smoothly.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="action-photos-banner">
+          <div>
+            <h3>Action Photos &amp; Event Highlights</h3>
+            <p>Add photos from <em>BridgENG Connections</em>, <em>ENGWEEK 2024</em>, <em>ACCESS</em> events, or any part-time/business/volunteer activities into <code>assets/</code> and link them here.</p>
+          </div>
+          <span class="badge-outline">Photo Gallery Ready</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yohann Elijah C. Rigo • Career e-Portfolio</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/yohann-elijah-rigo-17b12131a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:rigoyohann@gmail.com">Email</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
