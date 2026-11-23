@@ -864,6 +864,11 @@ code {
   text-align: center;
 }
 
+.gallery-media-img {
+  padding: 0;
+  display: block;
+}
+
 .gallery-media-video {
   aspect-ratio: 16 / 9;
   padding: 0;
