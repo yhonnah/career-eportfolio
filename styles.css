@@ -870,6 +870,7 @@ code {
 }
 
 .gallery-media-video iframe,
+.gallery-media-video video,
 .gallery-media img {
   width: 100%;
   height: 100%;
