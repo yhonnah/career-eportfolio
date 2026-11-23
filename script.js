@@ -103,6 +103,7 @@
 
   initCarousel("projectsGrid", "projectsPrev", "projectsNext", ".project-card:not(.hidden)");
   initCarousel("expTimeline", "expPrev", "expNext", ".exp-card");
+  initCarousel("galleryTrack", "galleryPrev", "galleryNext", ".gallery-card");
 
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {

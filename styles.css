@@ -804,56 +804,93 @@ code {
   margin-top: 0.35rem;
 }
 
-.video-feature-card {
-  margin-top: 2rem;
-  padding: 1.75rem;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
+.gallery-block {
+  margin-top: 2.5rem;
+}
+
+.gallery-header {
+  margin-bottom: 1.25rem;
+}
+
+.gallery-header h3 {
+  font-size: 1.45rem;
+  margin: 0;
+}
+
+.media-gallery {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--surface-muted);
+}
+
+.media-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.media-gallery::-webkit-scrollbar-track {
+  background: var(--surface-muted);
+  border-radius: 999px;
+}
+
+.media-gallery::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+.gallery-card {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
   background: var(--bg);
-  box-shadow: var(--shadow);
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 2rem;
-  align-items: center;
-}
-
-.video-feature-info h3 {
-  font-size: 1.35rem;
-  margin-bottom: 0.6rem;
-}
-
-.video-feature-info p {
-  color: var(--text-muted);
-  max-width: 54ch;
-  margin: 0 0 1.25rem;
-}
-
-.video-embed-frame {
-  width: 315px;
-  aspect-ratio: 9 / 16;
-  border-radius: 14px;
-  overflow: hidden;
   border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+}
+
+.gallery-media {
+  aspect-ratio: 9 / 14;
+  background: var(--surface-muted);
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.gallery-media-video {
+  padding: 0;
+  display: block;
   background: #000;
 }
 
-.video-embed-frame iframe {
+.gallery-media-video iframe,
+.gallery-media img {
   width: 100%;
   height: 100%;
   border: 0;
+  object-fit: cover;
   display: block;
 }
 
-@media (max-width: 800px) {
-  .video-feature-card {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: center;
-  }
+.gallery-caption {
+  padding: 1rem 1.1rem;
+}
 
-  .video-embed-frame {
-    width: min(315px, 100%);
-  }
+.gallery-caption h4 {
+  font-size: 1rem;
+  margin: 0 0 0.25rem;
+}
+
+.gallery-caption p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 .action-photos-banner {
