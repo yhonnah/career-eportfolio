@@ -53,8 +53,12 @@
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const filter = btn.dataset.filter;
-      filterBtns.forEach((b) => b.classList.remove("active"));
+      filterBtns.forEach((b) => {
+        b.classList.remove("active");
+        b.setAttribute("aria-pressed", "false");
+      });
       btn.classList.add("active");
+      btn.setAttribute("aria-pressed", "true");
 
       projectCards.forEach((card) => {
         const match = filter === "all" || card.dataset.category === filter;

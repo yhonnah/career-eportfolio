@@ -1,30 +1,31 @@
 :root {
-  --bg: #f8fafc;
+  --bg: #f6f6f2;
   --bg-alt: #ffffff;
   --surface: #ffffff;
-  --surface-muted: #f1f5f9;
+  --surface-muted: #eceee8;
   --text: #0f172a;
   --text-muted: #475569;
-  --border: #e2e8f0;
+  --border: #dfe2da;
   --accent: #0f766e;
   --accent-hover: #0d9488;
   --accent-soft: rgba(15, 118, 110, 0.1);
-  --shadow: 0 10px 30px -12px rgba(15, 23, 42, 0.08);
-  --radius: 16px;
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 12px 28px -16px rgba(15, 23, 42, 0.12);
+  --radius: 14px;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 [data-theme="dark"] {
-  --bg: #0b1120;
-  --bg-alt: #111827;
-  --surface: #1e293b;
-  --surface-muted: #0f172a;
-  --text: #f8fafc;
+  --bg: #090d16;
+  --bg-alt: #0f1624;
+  --surface: #131c2e;
+  --surface-muted: #0b1120;
+  --text: #f1f5f9;
   --text-muted: #94a3b8;
-  --border: #334155;
+  --border: #233047;
   --accent: #2dd4bf;
   --accent-hover: #5eead4;
   --accent-soft: rgba(45, 212, 191, 0.12);
-  --shadow: 0 12px 32px -12px rgba(0, 0, 0, 0.45);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 16px 36px -18px rgba(0, 0, 0, 0.55);
 }
 
 *,
@@ -39,16 +40,42 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.65;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #090d16;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+section[id] {
+  scroll-margin-top: 84px;
+}
+
 h1, h2, h3, h4 {
-  font-family: "Space Grotesk", "Inter", sans-serif;
-  line-height: 1.2;
+  font-family: "Space Grotesk", "Plus Jakarta Sans", sans-serif;
+  line-height: 1.18;
   margin: 0 0 0.75rem;
 }
 
@@ -62,7 +89,7 @@ a:hover {
 }
 
 code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.875em;
   background: var(--surface-muted);
   padding: 0.15rem 0.4rem;
@@ -76,6 +103,13 @@ code {
 
 .section {
   padding: 5rem 0;
+}
+
+#resume,
+#academic,
+#experience {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 700px;
 }
 
 .section-alt {
@@ -347,7 +381,7 @@ code {
 .pillars-grid {
   margin-top: 3.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1.35fr 1fr 1fr;
   gap: 1.25rem;
 }
 
@@ -357,10 +391,30 @@ code {
   border-radius: var(--radius);
   padding: 1.5rem;
   box-shadow: var(--shadow);
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.pillar-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.pillar-featured {
+  border-left: 3px solid var(--accent);
+}
+
+.pillar-index {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 0.55rem;
 }
 
 .pillar-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.12rem;
 }
 
 .pillar-card p {
@@ -1027,5 +1081,18 @@ code {
 
   .nav-links.open {
     display: flex;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
   }
 }

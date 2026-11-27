@@ -7,10 +7,11 @@
   <meta name="description" content="Career e-Portfolio of Yohann Elijah C. Rigo — BS Computer Engineering student at De La Salle University - Manila specializing in Full-Stack Development, IT Solutions, Hardware, and AI." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="site-header" id="top">
     <nav class="nav-container" aria-label="Primary navigation">
       <a href="#top" class="brand">
@@ -34,7 +35,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- Hero / Self-Introduction -->
     <section class="hero section" id="about">
       <div class="container hero-grid">
@@ -62,7 +63,7 @@
         </div>
 
         <div class="hero-photo-card">
-          <img src="assets/headshot.jpg" alt="Yohann Elijah C. Rigo" class="hero-headshot" />
+          <img src="assets/headshot.jpg" alt="Yohann Elijah C. Rigo" class="hero-headshot" width="400" height="420" fetchpriority="high" decoding="async" />
           <div class="status-pill">
             <span class="status-dot"></span>
             Open to Software, Full-Stack &amp; IT Solutions Roles
@@ -70,17 +71,20 @@
         </div>
       </div>
 
-      <!-- Core Pillars -->
+      <!-- Core Pillars (Asymmetric Bento) -->
       <div class="container pillars-grid">
-        <article class="pillar-card">
-          <h3>Full-Stack &amp; Software</h3>
-          <p>Proficient in Python, C/C++, Java, PHP, SQL, HTML/CSS, JavaScript, and MATLAB—building role-guarded, cloud-connected web applications from database schema to deployment.</p>
+        <article class="pillar-card pillar-featured">
+          <span class="pillar-index">01 / SOFTWARE &amp; AI</span>
+          <h3>Full-Stack &amp; Applied AI Systems</h3>
+          <p>Proficient in Python, C/C++, Java, PHP, SQL, HTML/CSS, JavaScript, and MATLAB—building role-guarded, cloud-connected web platforms, computer vision pipelines, and tabular ML models from schema to deployment.</p>
         </article>
         <article class="pillar-card">
+          <span class="pillar-index">02 / EMBEDDED &amp; IOT</span>
           <h3>IoT &amp; Hardware Engineering</h3>
           <p>Hands-on experience with IoT systems, ESP32/BLE beacons, microcontrollers, Arduino, PCB design (Eagle), and CAD tools (AutoCAD, OnShape), bridging physical systems with software logic.</p>
         </article>
         <article class="pillar-card">
+          <span class="pillar-index">03 / OPERATIONS</span>
           <h3>Leadership &amp; Operations</h3>
           <p>Proven track record leading linkages, externals, promotions, and logistics across DLSU Engineering College Government, ACCESS, 78th ENG, and Viridis Arcus Esports.</p>
         </article>
@@ -183,10 +187,10 @@
             <span class="section-kicker">Coursework, Thesis &amp; Capstone</span>
             <h2>Academic Work Samples</h2>
           </div>
-          <div class="filter-tabs" role="tablist" aria-label="Filter academic samples">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="software">Software &amp; AI</button>
-            <button class="filter-btn" data-filter="hardware">AR &amp; Hardware</button>
+          <div class="filter-tabs" role="group" aria-label="Filter academic samples">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="software" aria-pressed="false">Software &amp; AI</button>
+            <button class="filter-btn" data-filter="hardware" aria-pressed="false">AR &amp; Hardware</button>
           </div>
         </div>
 
@@ -220,7 +224,7 @@
 
           <article class="project-card" data-category="software">
             <div class="project-media project-media-img">
-              <img src="assets/asterisko-screenshot.png" alt="Asterisko Artisan Coffee Inventory Management System login screen" />
+              <img src="assets/asterisko-screenshot.png" alt="Asterisko Artisan Coffee Inventory Management System login screen" loading="lazy" decoding="async" />
             </div>
             <div class="project-body">
               <div class="project-tags">
@@ -405,7 +409,7 @@
 
               <article class="gallery-card">
                 <div class="gallery-media gallery-media-img">
-                  <img src="assets/access-promos.jpg" alt="ACCESS BYTE 2026 Beyond Your Technical Expertise event photo" />
+                  <img src="assets/access-promos.jpg" alt="ACCESS BYTE 2026 Beyond Your Technical Expertise event photo" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-caption">
                   <h4>ACCESS Event Pubs &amp; Campaigns</h4>
